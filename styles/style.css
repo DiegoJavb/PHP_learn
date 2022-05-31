@@ -1,0 +1,22 @@
+body {
+    background-image: url("../images/flor.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    transform: translate(0, 50%);
+}
+
+.tabla {
+    background-color: aquamarine;
+    width: 500px;
+    height: 300px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
