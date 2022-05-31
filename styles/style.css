@@ -1,22 +1,29 @@
-body {
-    background-image: url("../images/flor.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
 .contenedor {
-    margin: 0px;
-    padding: 0px;
+    background-image: url("../images/flor.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
     transform: translate(0, 50%);
 }
 
+.sub_contenedor {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(15, 15, 15, 0.5);
+}
+
 .tabla {
-    background-color: aquamarine;
     width: 500px;
     height: 300px;
     border-collapse: collapse;
     border-spacing: 0;
     margin-bottom: 20px;
+    border: solid, black;
 }

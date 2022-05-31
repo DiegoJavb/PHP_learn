@@ -15,28 +15,31 @@ include('db.php');
 <body>
     <div class="contenedor">
         <div class="sub_contenedor">
-            <table class="tabla">
-                <tr>
-                    <td>Nombre</td>
-                    <td>Precio</td>
-                    <td>Cantidad</td>
-                    <td>Existencia</td>
-                </tr>
-                <?php
-                $sql = "SELECT * FROM datos";
-                $result = mysqli_query($conexion, $sql);
-                while ($mostrar = mysqli_fetch_array($result)) {
-                ?>
+            <div class="tabla">
+                <table class="tabla">
                     <tr>
-                        <td><?php echo $mostrar['Nombre'] ?></td>
-                        <td><?php echo $mostrar['Precio'] ?></td>
-                        <td><?php echo $mostrar['Cantidad'] ?></td>
-                        <td><?php echo $mostrar['Existencias'] ?></td>
+                        <td>Nombre</td>
+                        <td>Precio</td>
+                        <td>Cantidad</td>
+                        <td>Existencia</td>
                     </tr>
-                <?php
-                }
-                ?>
-            </table>
+                    <?php
+                    $sql = "SELECT * FROM datos";
+                    $result = mysqli_query($conexion, $sql);
+                    while ($mostrar = mysqli_fetch_array($result)) {
+                    ?>
+                        <tr>
+                            <td><?php echo $mostrar['Nombre'] ?></td>
+                            <td><?php echo $mostrar['Precio'] ?></td>
+                            <td><?php echo $mostrar['Cantidad'] ?></td>
+                            <td><?php echo $mostrar['Existencias'] ?></td>
+                        </tr>
+                    <?php
+                    }
+                    ?>
+                </table>
+            </div>
+
         </div>
     </div>
 </body>
