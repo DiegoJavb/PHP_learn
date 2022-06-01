@@ -8,7 +8,7 @@ include('db.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/second.css">
     <title>Productos</title>
 </head>
 
@@ -16,12 +16,12 @@ include('db.php');
     <div class="contenedor">
         <div class="sub_contenedor">
             <div class="tabla">
-                <table class="tabla">
+                <table>
                     <tr>
-                        <td>Nombre</td>
-                        <td>Precio</td>
-                        <td>Cantidad</td>
-                        <td>Existencia</td>
+                        <td class="titulo">Nombre</td>
+                        <td class="titulo">Precio</td>
+                        <td class="titulo">Cantidad</td>
+                        <td class="titulo ultimo">Existencia</td>
                     </tr>
                     <?php
                     $sql = "SELECT * FROM datos";
@@ -32,7 +32,7 @@ include('db.php');
                             <td><?php echo $mostrar['Nombre'] ?></td>
                             <td><?php echo $mostrar['Precio'] ?></td>
                             <td><?php echo $mostrar['Cantidad'] ?></td>
-                            <td><?php echo $mostrar['Existencias'] ?></td>
+                            <td class="ultimo"><?php echo $mostrar['Existencias'] ?></td>
                         </tr>
                     <?php
                     }
